@@ -17,7 +17,7 @@
 body {
     font-family: 'Georgia', serif;
     color: var(--dark-gray);
-    line-height: 1.6;
+    line-height: 1.5;
     overflow-x: hidden;
     padding-top: 0;
     margin: 0;
@@ -159,7 +159,7 @@ nav.scrolled {
 
 .hero h1 {
     font-size: 3.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
     font-style: italic;
     color: var(--camel);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -167,7 +167,7 @@ nav.scrolled {
 
 .hero h2 {
     font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     font-weight: 300;
     color: #ffffff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -175,8 +175,8 @@ nav.scrolled {
 
 .hero p {
     font-size: 1.2rem;
-    margin-bottom: 2rem;
-    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
     color: #ffffff;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
@@ -227,16 +227,16 @@ nav.scrolled {
 
 /* Features Section - Enhanced */
 .features {
-    padding: 5rem 5%;
+    padding: 4rem 5%;
     background: whitesmoke;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 3rem;
+    gap: 2.5rem;
 }
 
 .feature {
     text-align: center;
-    padding: 2.5rem;
+    padding: 2rem;
     transition: all 0.4s ease;
     background: #ffffff;
     border-radius: 15px;
@@ -269,16 +269,16 @@ nav.scrolled {
 .feature-icon {
     font-size: 4rem;
     color: var(--camel);
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100px;
+    height: 80px;
 }
 
 .feature-icon svg {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     stroke: var(--camel);
     fill: none;
     stroke-width: 1.5;
@@ -292,22 +292,100 @@ nav.scrolled {
 
 .feature h3 {
     color: var(--dark-gray);
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
     font-size: 1.5rem;
 }
 
 .feature p {
     color: var(--dark-gray);
-    line-height: 1.8;
+    line-height: 1.6;
+}
+
+/* Approach Section */
+.approach {
+    padding: 4rem 5%;
+    background: var(--beige);
+    display: block;
+}
+
+.approach-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.approach-header h2 {
+    font-size: 2.3rem;
+    color: var(--dark-gray);
+}
+
+.approach-content {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.approach-content h3 {
+    color: var(--camel);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.approach-content > p {
+    color: var(--dark-gray);
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+}
+
+.approach-list {
+    list-style: none;
+    margin: 1.2rem 0;
+    padding-left: 0;
+}
+
+.approach-list li {
+    color: var(--dark-gray);
+    line-height: 1.6;
+    margin-bottom: 0.8rem;
+    padding-left: 1.8rem;
+    position: relative;
+}
+
+.approach-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--camel);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.approach-note {
+    margin-top: 1.5rem;
+    font-style: italic;
+    color: var(--dark-gray);
+    padding: 1.2rem;
+    background: rgba(192, 153, 107, 0.05);
+    border-left: 3px solid var(--camel);
+    border-radius: 5px;
+    line-height: 1.6;
+}
+
+/* Strategic Approach Section */
+.strategic-approach {
+    padding: 4rem 5%;
+    background: #ffffff;
 }
 
 /* About Section - Enhanced */
 .about {
-    padding: 5rem 5%;
+    padding: 4rem 5%;
     background: var(--beige);
     display: grid;
     grid-template-columns: 1fr 1.5fr;
-    gap: 4rem;
+    gap: 3rem;
     align-items: center;
 }
 
@@ -342,28 +420,29 @@ nav.scrolled {
 
 .about-content h2 {
     font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
     color: var(--dark-gray);
 }
 
 .about-content p {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     color: var(--dark-gray);
     text-align: justify;
+    line-height: 1.6;
 }
 
 .coaching-style {
     font-style: italic;
     color: var(--camel);
     font-size: 1.2rem;
-    margin: 2rem 0;
+    margin: 1.5rem 0;
     padding-left: 1.5rem;
     border-left: 4px solid var(--camel);
 }
 
 /* Quote Section - Simple */
 .quote-section {
-    padding: 3rem 5%;
+    padding: 2.5rem 5%;
     background: #ffffff;
     text-align: center;
 }
@@ -375,25 +454,25 @@ nav.scrolled {
     font-weight: 600;
     max-width: 900px;
     margin: 0 auto;
-    line-height: 1.8;
+    line-height: 1.6;
 }
 
 /* Credentials Section */
 .credentials {
-    padding: 5rem 5%;
+    padding: 4rem 5%;
     background: #ffffff;
 }
 
 .credentials .section-header {
     text-align: center;
     max-width: 900px;
-    margin: 0 auto 3rem;
+    margin: 0 auto 2.5rem;
 }
 
 .credentials .section-header h2 {
     font-size: 2.5rem;
     color: var(--dark-gray);
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
     position: relative;
     display: inline-block;
 }
@@ -412,8 +491,8 @@ nav.scrolled {
 .credentials .section-header p {
     color: var(--dark-gray);
     font-size: 1.1rem;
-    line-height: 1.7;
-    margin-top: 1.5rem;
+    line-height: 1.5;
+    margin-top: 1.2rem;
 }
 
 .credentials-grid {
@@ -456,13 +535,13 @@ nav.scrolled {
 .section-header {
     text-align: center;
     max-width: 800px;
-    margin: 0 auto 3rem;
+    margin: 0 auto 2.5rem;
 }
 
 .section-header h2 {
     font-size: 2.5rem;
     color: var(--dark-gray);
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
     position: relative;
     display: inline-block;
 }
@@ -480,11 +559,11 @@ nav.scrolled {
 
 .section-header p {
     color: var(--dark-gray);
-    line-height: 1.7;
+    line-height: 1.5;
 }
 
 .programs {
-    padding: 5rem 5%;
+    padding: 4rem 5%;
     background: var(--light-gray);
 }
 
@@ -498,7 +577,7 @@ nav.scrolled {
     background: #ffffff;
     border-left: 5px solid var(--camel);
     border-radius: 12px;
-    padding: 2.5rem;
+    padding: 2rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     transition: all 0.4s ease;
     position: relative;
@@ -527,7 +606,7 @@ nav.scrolled {
 
 .program-card h3 {
     color: var(--camel);
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
     font-size: 1.6rem;
     position: relative;
     z-index: 1;
@@ -535,14 +614,14 @@ nav.scrolled {
 
 .program-card p {
     color: var(--dark-gray);
-    line-height: 1.8;
+    line-height: 1.6;
     position: relative;
     z-index: 1;
 }
 
 /* Experience Section - Enhanced */
 .experience {
-    padding: 5rem 5%;
+    padding: 4rem 5%;
     background: #ffffff;
 }
 
@@ -554,7 +633,7 @@ nav.scrolled {
 
 .experience-card {
     background: var(--beige);
-    padding: 2.5rem;
+    padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     border-top: 5px solid var(--camel);
@@ -567,7 +646,7 @@ nav.scrolled {
 }
 
 .experience-card h3 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
     color: var(--dark-gray);
     font-size: 1.5rem;
 }
@@ -575,11 +654,11 @@ nav.scrolled {
 .experience-card ul {
     margin-left: 1.5rem;
     color: var(--dark-gray);
-    line-height: 2;
+    line-height: 1.7;
 }
 
 .experience-card ul li {
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.6rem;
     position: relative;
 }
 
@@ -588,18 +667,19 @@ nav.scrolled {
 }
 
 .experience-note {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     color: var(--dark-gray);
     font-style: italic;
-    padding: 1.5rem;
+    padding: 1.2rem;
     background: rgba(255, 255, 255, 0.6);
     border-radius: 8px;
     border-left: 3px solid var(--camel);
+    line-height: 1.6;
 }
 
 /* Why & CTA side-by-side */
 .why-cta-row {
-    padding: 5rem 5%;
+    padding: 4rem 5%;
     background: var(--light-gray);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -615,7 +695,7 @@ nav.scrolled {
 
 .why-section .why-me {
     background: #ffffff;
-    padding: 2.5rem;
+    padding: 2rem;
     border-radius: 15px;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
@@ -628,7 +708,7 @@ nav.scrolled {
 
 .why-me h2 {
     font-size: 2.3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     color: var(--dark-gray);
 }
 
@@ -639,9 +719,9 @@ nav.scrolled {
 .why-list li {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
     gap: 1rem;
-    padding: 0.85rem;
+    padding: 0.7rem;
     border-radius: 10px;
     transition: all 0.3s ease;
 }
@@ -673,14 +753,14 @@ nav.scrolled {
 }
 
 .why-list li span {
-    line-height: 1.7;
+    line-height: 1.5;
     color: var(--dark-gray);
     font-size: 0.98rem;
 }
 
 /* CTA Section - Enhanced */
 .cta {
-    padding: 3rem;
+    padding: 2.5rem;
     background: linear-gradient(135deg, #c0996b, #8a6a42);
     color: #ffffff;
     position: relative;
@@ -716,27 +796,27 @@ nav.scrolled {
 
 .cta-content h2 {
     font-size: 2.3rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .cta-content > p {
     max-width: 100%;
-    margin-bottom: 1.8rem;
-    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
     font-size: 1rem;
 }
 
 .cta-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.2rem;
-    margin-bottom: 1.8rem;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .cta-card {
     background: rgba(255, 255, 255, 0.1);
-    padding: 1.5rem;
+    padding: 1.2rem;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
@@ -751,20 +831,20 @@ nav.scrolled {
 }
 
 .cta-card h3 {
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.6rem;
     color: #ffffff;
     font-size: 1.3rem;
 }
 
 .cta-card p {
     color: #f6f1e9;
-    line-height: 1.6;
+    line-height: 1.5;
     font-size: 0.95rem;
 }
 
 /* Contact Section - Enhanced */
 .contact-section {
-    padding: 5rem 5%;
+    padding: 4rem 5%;
     background: #ffffff;
     display: grid;
     grid-template-columns: 1fr;
@@ -774,7 +854,7 @@ nav.scrolled {
 
 .contact-card {
     background: var(--beige);
-    padding: 3rem;
+    padding: 2.5rem;
     border-radius: 15px;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
@@ -786,34 +866,34 @@ nav.scrolled {
 
 .contact-content h2 {
     font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
     color: var(--dark-gray);
 }
 
 .contact-content p {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
     color: var(--dark-gray);
-    line-height: 1.8;
+    line-height: 1.6;
 }
 
 .direct-access h3 {
     color: var(--camel);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
     font-size: 1.4rem;
 }
 
 .contact-list {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    margin: 1.5rem 0;
+    gap: 0.8rem;
+    margin: 1.2rem 0;
 }
 
 .contact-item {
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding: 1.2rem;
+    padding: 1rem;
     background: #ffffff;
     border-radius: 10px;
     transition: all 0.3s ease;
@@ -861,7 +941,7 @@ nav.scrolled {
     display: flex;
     flex-wrap: wrap;
     gap: 0.8rem;
-    margin-top: 1.5rem;
+    margin-top: 1.2rem;
 }
 
 .service-tag {
@@ -883,7 +963,7 @@ nav.scrolled {
 
 /* Final Message - Enhanced */
 .final-message {
-    padding: 4rem 5%;
+    padding: 3rem 5%;
     background: linear-gradient(135deg, var(--dark-gray), #3a3a3b);
     color: #ffffff;
     text-align: center;
@@ -914,19 +994,19 @@ nav.scrolled {
 footer {
     background: var(--dark-gray);
     color: #ffffff;
-    padding: 4rem 5% 2rem;
+    padding: 3rem 5% 1.5rem;
 }
 
 .footer-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 3rem;
-    margin-bottom: 2rem;
+    gap: 2.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .footer-section h3 {
     color: var(--camel);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
     font-size: 1.3rem;
 }
 
@@ -934,8 +1014,9 @@ footer {
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
     display: block;
-    margin-bottom: 0.7rem;
+    margin-bottom: 0.6rem;
     transition: all 0.3s ease;
+    line-height: 1.5;
 }
 
 .footer-section a:hover {
@@ -945,7 +1026,7 @@ footer {
 
 .footer-bottom {
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 1.5rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     color: rgba(255, 255, 255, 0.7);
 }
@@ -968,7 +1049,7 @@ footer {
 
     .why-cta-row {
         grid-template-columns: 1fr;
-        gap: 3rem;
+        gap: 2.5rem;
     }
 
     .cta {
