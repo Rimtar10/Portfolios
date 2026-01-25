@@ -17,7 +17,7 @@
 body {
     font-family: 'Inter', sans-serif;
     color: var(--dark-gray);
-    line-height: 1.7;
+    line-height: 1.4;
     overflow-x: hidden;
     padding-top: 0;
     margin: 0;
@@ -34,6 +34,12 @@ h1, h2, h3, h4 {
     font-weight: 700;
     letter-spacing: -0.2px;
     line-height: 1.2;
+    text-align: left;
+}
+
+p {
+    text-align: left;
+    margin-bottom: 0.5rem;
 }
 
 /* Navigation - Enhanced */
@@ -164,26 +170,29 @@ nav.scrolled {
 
 .hero h1 {
     font-size: 3.5rem;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.5rem;
     font-style: italic;
     color: var(--camel);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: left;
 }
 
 .hero h2 {
     font-size: 2.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     font-weight: 300;
     color: #ffffff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: left;
 }
 
 .hero p {
     font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-    line-height: 1.6;
+    margin-bottom: 1rem;
+    line-height: 1.4;
     color: #ffffff;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    text-align: left;
 }
 
 .hero-buttons {
@@ -240,7 +249,7 @@ nav.scrolled {
 }
 
 .feature {
-    text-align: center;
+    text-align: left;
     padding: 2rem;
     transition: all 0.4s ease;
     background: #ffffff;
@@ -274,10 +283,10 @@ nav.scrolled {
 .feature-icon {
     font-size: 4rem;
     color: var(--camel);
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.5rem;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     height: 80px;
 }
 
@@ -297,13 +306,15 @@ nav.scrolled {
 
 .feature h3 {
     color: var(--dark-gray);
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.5rem;
     font-size: 1.5rem;
+    text-align: left;
 }
 
 .feature p {
     color: var(--dark-gray);
-    line-height: 1.6;
+    line-height: 1.4;
+    text-align: left;
 }
 
 /* Approach Section */
@@ -314,18 +325,19 @@ nav.scrolled {
 }
 
 .approach-header {
-    text-align: center;
-    margin-bottom: 2.5rem;
+    text-align: left;
+    margin-bottom: 2rem;
 }
 
 .approach-header h2 {
     font-size: 2.3rem;
     color: var(--dark-gray);
+    text-align: left;
 }
 
 .approach-content {
     max-width: 900px;
-    margin: 0 auto;
+    margin: 0;
     background: #ffffff;
     padding: 2.5rem;
     border-radius: 15px;
@@ -335,27 +347,30 @@ nav.scrolled {
 .approach-content h3 {
     color: var(--camel);
     font-size: 1.8rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
 }
 
 .approach-content > p {
     color: var(--dark-gray);
-    line-height: 1.6;
-    margin-bottom: 1.2rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+    text-align: left;
 }
 
 .approach-list {
     list-style: none;
-    margin: 1.2rem 0;
+    margin: 0.5rem 0;
     padding-left: 0;
 }
 
 .approach-list li {
     color: var(--dark-gray);
-    line-height: 1.6;
-    margin-bottom: 0.8rem;
+    line-height: 1.4;
+    margin-bottom: 0.3rem;
     padding-left: 1.8rem;
     position: relative;
+    text-align: left;
 }
 
 .approach-list li::before {
@@ -368,14 +383,15 @@ nav.scrolled {
 }
 
 .approach-note {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     font-style: italic;
     color: var(--dark-gray);
     padding: 1.2rem;
     background: rgba(192, 153, 107, 0.05);
     border-left: 3px solid var(--camel);
     border-radius: 5px;
-    line-height: 1.6;
+    line-height: 1.4;
+    text-align: left;
 }
 
 /* Strategic Approach Section */
@@ -425,31 +441,33 @@ nav.scrolled {
 
 .about-content h2 {
     font-size: 2.5rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.5rem;
     color: var(--dark-gray);
+    text-align: left;
 }
 
 .about-content p {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     color: var(--dark-gray);
-    text-align: justify;
-    line-height: 1.6;
+    text-align: left;
+    line-height: 1.4;
 }
 
 .coaching-style {
     font-style: italic;
     color: var(--camel);
     font-size: 1.2rem;
-    margin: 1.5rem 0;
+    margin: 1rem 0 0.5rem 0;
     padding-left: 1.5rem;
     border-left: 4px solid var(--camel);
+    text-align: left;
 }
 
 /* Quote Section - Simple */
 .quote-section {
     padding: 2.5rem 5%;
     background: #ffffff;
-    text-align: center;
+    text-align: left;
 }
 
 .quote-section p {
@@ -458,8 +476,9 @@ nav.scrolled {
     color: var(--camel);
     font-weight: 600;
     max-width: 900px;
-    margin: 0 auto;
-    line-height: 1.6;
+    margin: 0;
+    line-height: 1.4;
+    text-align: left;
 }
 
 /* Credentials Section */
@@ -469,25 +488,25 @@ nav.scrolled {
 }
 
 .credentials .section-header {
-    text-align: center;
+    text-align: left;
     max-width: 900px;
-    margin: 0 auto 2.5rem;
+    margin: 0 0 2rem 0;
 }
 
 .credentials .section-header h2 {
     font-size: 2.5rem;
     color: var(--dark-gray);
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.5rem;
     position: relative;
     display: inline-block;
+    text-align: left;
 }
 
 .credentials .section-header h2::after {
     content: '';
     position: absolute;
     bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
     width: 60px;
     height: 3px;
     background: var(--camel);
@@ -496,8 +515,9 @@ nav.scrolled {
 .credentials .section-header p {
     color: var(--dark-gray);
     font-size: 1.1rem;
-    line-height: 1.5;
-    margin-top: 1.2rem;
+    line-height: 1.4;
+    margin-top: 1rem;
+    text-align: left;
 }
 
 .credentials-grid {
@@ -505,7 +525,7 @@ nav.scrolled {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2.5rem;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .credential-item {
@@ -538,25 +558,25 @@ nav.scrolled {
 
 /* Programs Section - Enhanced */
 .section-header {
-    text-align: center;
+    text-align: left;
     max-width: 800px;
-    margin: 0 auto 2.5rem;
+    margin: 0 0 2rem 0;
 }
 
 .section-header h2 {
     font-size: 2.5rem;
     color: var(--dark-gray);
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.5rem;
     position: relative;
     display: inline-block;
+    text-align: left;
 }
 
 .section-header h2::after {
     content: '';
     position: absolute;
     bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
     width: 60px;
     height: 3px;
     background: var(--camel);
@@ -564,7 +584,8 @@ nav.scrolled {
 
 .section-header p {
     color: var(--dark-gray);
-    line-height: 1.5;
+    line-height: 1.4;
+    text-align: left;
 }
 
 .programs {
@@ -611,17 +632,19 @@ nav.scrolled {
 
 .program-card h3 {
     color: var(--camel);
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.5rem;
     font-size: 1.6rem;
     position: relative;
     z-index: 1;
+    text-align: left;
 }
 
 .program-card p {
     color: var(--dark-gray);
-    line-height: 1.6;
+    line-height: 1.4;
     position: relative;
     z-index: 1;
+    text-align: left;
 }
 
 /* Experience Section - Enhanced */
@@ -651,20 +674,22 @@ nav.scrolled {
 }
 
 .experience-card h3 {
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.5rem;
     color: var(--dark-gray);
     font-size: 1.5rem;
+    text-align: left;
 }
 
 .experience-card ul {
     margin-left: 1.5rem;
     color: var(--dark-gray);
-    line-height: 1.7;
+    line-height: 1.4;
 }
 
 .experience-card ul li {
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.3rem;
     position: relative;
+    text-align: left;
 }
 
 .experience-card ul li::marker {
@@ -672,14 +697,15 @@ nav.scrolled {
 }
 
 .experience-note {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     color: var(--dark-gray);
     font-style: italic;
     padding: 1.2rem;
     background: rgba(255, 255, 255, 0.6);
     border-radius: 8px;
     border-left: 3px solid var(--camel);
-    line-height: 1.6;
+    line-height: 1.4;
+    text-align: left;
 }
 
 /* Why & CTA side-by-side */
@@ -713,8 +739,9 @@ nav.scrolled {
 
 .why-me h2 {
     font-size: 2.3rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     color: var(--dark-gray);
+    text-align: left;
 }
 
 .why-list {
@@ -724,7 +751,7 @@ nav.scrolled {
 .why-list li {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.3rem;
     gap: 1rem;
     padding: 0.7rem;
     border-radius: 10px;
@@ -758,9 +785,10 @@ nav.scrolled {
 }
 
 .why-list li span {
-    line-height: 1.5;
+    line-height: 1.4;
     color: var(--dark-gray);
     font-size: 0.98rem;
+    text-align: left;
 }
 
 /* CTA Section - Enhanced */
@@ -801,22 +829,24 @@ nav.scrolled {
 
 .cta-content h2 {
     font-size: 2.3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: left;
 }
 
 .cta-content > p {
     max-width: 100%;
-    margin-bottom: 1.5rem;
-    line-height: 1.5;
+    margin-bottom: 1rem;
+    line-height: 1.4;
     font-size: 1rem;
+    text-align: left;
 }
 
 .cta-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .cta-card {
@@ -836,15 +866,17 @@ nav.scrolled {
 }
 
 .cta-card h3 {
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.3rem;
     color: #ffffff;
     font-size: 1.3rem;
+    text-align: left;
 }
 
 .cta-card p {
     color: #f6f1e9;
-    line-height: 1.5;
+    line-height: 1.4;
     font-size: 0.95rem;
+    text-align: left;
 }
 
 /* Contact Section - Enhanced */
@@ -871,27 +903,30 @@ nav.scrolled {
 
 .contact-content h2 {
     font-size: 2.5rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.5rem;
     color: var(--dark-gray);
+    text-align: left;
 }
 
 .contact-content p {
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.5rem;
     color: var(--dark-gray);
-    line-height: 1.6;
+    line-height: 1.4;
+    text-align: left;
 }
 
 .direct-access h3 {
     color: var(--camel);
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.5rem;
     font-size: 1.4rem;
+    text-align: left;
 }
 
 .contact-list {
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
-    margin: 1.2rem 0;
+    margin: 0.5rem 0;
 }
 
 .contact-item {
@@ -946,7 +981,7 @@ nav.scrolled {
     display: flex;
     flex-wrap: wrap;
     gap: 0.8rem;
-    margin-top: 1.2rem;
+    margin-top: 0.5rem;
 }
 
 .service-tag {
@@ -971,7 +1006,7 @@ nav.scrolled {
     padding: 3rem 5%;
     background: linear-gradient(135deg, var(--dark-gray), #3a3a3b);
     color: #ffffff;
-    text-align: center;
+    text-align: left;
     font-style: italic;
     font-size: 1.3rem;
     position: relative;
@@ -990,9 +1025,10 @@ nav.scrolled {
 
 .final-message p {
     max-width: 900px;
-    margin: 0 auto;
+    margin: 0;
     position: relative;
     z-index: 1;
+    text-align: left;
 }
 
 /* Footer - Enhanced */
@@ -1006,22 +1042,24 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .footer-section h3 {
     color: var(--camel);
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.5rem;
     font-size: 1.3rem;
+    text-align: left;
 }
 
 .footer-section p, .footer-section a {
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
     display: block;
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.3rem;
     transition: all 0.3s ease;
-    line-height: 1.5;
+    line-height: 1.4;
+    text-align: left;
 }
 
 .footer-section a:hover {
@@ -1030,8 +1068,8 @@ footer {
 }
 
 .footer-bottom {
-    text-align: center;
-    padding-top: 1.5rem;
+    text-align: left;
+    padding-top: 1rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     color: rgba(255, 255, 255, 0.7);
 }
@@ -1076,8 +1114,8 @@ footer {
     }
 
     .hero-content {
-        text-align: center;
-        margin: 0 auto;
+        text-align: left;
+        margin: 0;
         margin-left: 0;
         margin-right: 0;
         padding: 1rem;
@@ -1085,18 +1123,21 @@ footer {
 
     .hero h1 {
         font-size: 2.5rem;
+        text-align: left;
     }
 
     .hero h2 {
         font-size: 1.8rem;
+        text-align: left;
     }
 
     .hero p {
         font-size: 1.1rem;
+        text-align: left;
     }
 
     .hero-buttons {
-        justify-content: center;
+        justify-content: flex-start;
         flex-wrap: wrap;
     }
 
@@ -1164,5 +1205,25 @@ footer {
     
     .credential-item {
         padding: 1.5rem;
+    }
+    
+    .approach-header {
+        text-align: left;
+    }
+    
+    .section-header {
+        text-align: left;
+    }
+    
+    .quote-section {
+        text-align: left;
+    }
+    
+    .final-message {
+        text-align: left;
+    }
+    
+    .footer-bottom {
+        text-align: left;
     }
 }
