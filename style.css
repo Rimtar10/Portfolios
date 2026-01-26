@@ -467,7 +467,7 @@ nav.scrolled {
 .quote-section {
     padding: 2.5rem 5%;
     background: #ffffff;
-    text-align: left;
+    text-align: center;
 }
 
 .quote-section p {
@@ -476,9 +476,9 @@ nav.scrolled {
     color: var(--camel);
     font-weight: 600;
     max-width: 900px;
-    margin: 0;
+    margin: 0 auto;
     line-height: 1.4;
-    text-align: left;
+    text-align: center;
 }
 
 /* Credentials Section */
@@ -496,16 +496,17 @@ nav.scrolled {
 .credentials .section-header h2 {
     font-size: 2.5rem;
     color: var(--dark-gray);
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
     position: relative;
     display: inline-block;
     text-align: left;
+    padding-bottom: 1rem;
 }
 
 .credentials .section-header h2::after {
     content: '';
     position: absolute;
-    bottom: -10px;
+    bottom: 0;
     left: 0;
     width: 60px;
     height: 3px;
@@ -516,7 +517,7 @@ nav.scrolled {
     color: var(--dark-gray);
     font-size: 1.1rem;
     line-height: 1.4;
-    margin-top: 1rem;
+    margin-top: 0.8rem;
     text-align: left;
 }
 
@@ -566,16 +567,17 @@ nav.scrolled {
 .section-header h2 {
     font-size: 2.5rem;
     color: var(--dark-gray);
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
     position: relative;
     display: inline-block;
     text-align: left;
+    padding-bottom: 1rem;
 }
 
 .section-header h2::after {
     content: '';
     position: absolute;
-    bottom: -10px;
+    bottom: 0;
     left: 0;
     width: 60px;
     height: 3px;
@@ -586,6 +588,7 @@ nav.scrolled {
     color: var(--dark-gray);
     line-height: 1.4;
     text-align: left;
+    margin-top: 0.8rem;
 }
 
 .programs {
@@ -1006,7 +1009,7 @@ nav.scrolled {
     padding: 3rem 5%;
     background: linear-gradient(135deg, var(--dark-gray), #3a3a3b);
     color: #ffffff;
-    text-align: left;
+    text-align: center;
     font-style: italic;
     font-size: 1.3rem;
     position: relative;
@@ -1025,10 +1028,10 @@ nav.scrolled {
 
 .final-message p {
     max-width: 900px;
-    margin: 0;
+    margin: 0 auto;
     position: relative;
     z-index: 1;
-    text-align: left;
+    text-align: center;
 }
 
 /* Footer - Enhanced */
@@ -1068,7 +1071,7 @@ footer {
 }
 
 .footer-bottom {
-    text-align: left;
+    text-align: center;
     padding-top: 1rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     color: rgba(255, 255, 255, 0.7);
@@ -1216,14 +1219,14 @@ footer {
     }
     
     .quote-section {
-        text-align: left;
+        text-align: center;
     }
     
     .final-message {
-        text-align: left;
+        text-align: center;
     }
     
     .footer-bottom {
-        text-align: left;
+        text-align: center;
     }
 }
