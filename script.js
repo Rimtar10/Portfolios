@@ -11,8 +11,8 @@
    coaching card button stays disabled.
 ------------------------------------------------------------------- */
 const CALENDLY = {
-  org: '',
-  coaching: '',
+  org: 'https://calendly.com/mariam6tk/15min',
+  coaching: 'https://calendly.com/mariam6tk/15min',
 };
 
 /* ---------- Booking CTAs ---------- */
