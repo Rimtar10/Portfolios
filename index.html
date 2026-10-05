@@ -3,14 +3,29 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Mariam Tarhini | Neuro-Industrial Leadership. Neuroscience-informed training, human factors and leadership for industrial and operational workplaces.">
   <title>Mariam Tarhini | Neuro-Industrial Leadership</title>
+  <meta name="description" content="Mariam Tarhini | Neuro-Industrial Leadership. Neuroscience-informed training, human factors and leadership for industrial and operational workplaces.">
+  <meta name="theme-color" content="#F4F1EC">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <!-- Open Graph / social sharing.
+       og:url and og:image must be absolute: update the domain below if the site is not served from GitHub Pages. -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mariam Tarhini | Neuro-Industrial Leadership">
+  <meta property="og:description" content="Neuroscience-informed training, human factors and leadership for industrial and operational workplaces.">
+  <meta property="og:url" content="https://rimtar10.github.io/Portfolios/">
+  <meta property="og:image" content="https://rimtar10.github.io/Portfolios/assets/mariam-hero.jpg">
+  <meta property="og:image:width" content="1600">
+  <meta property="og:image:height" content="883">
+  <meta property="og:image:alt" content="Portrait of Mariam Tarhini">
+  <meta name="twitter:card" content="summary_large_image">
 
   <!-- Fonts: Montserrat (headings, navigation, buttons) + Inter (body). -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+  <link rel="preload" as="image" href="assets/mariam-hero.jpg">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
@@ -42,8 +57,8 @@
   <main id="main">
 
     <!-- ============ SECTION 01: HERO ============ -->
-    <section id="top" class="section hero">
-      <div class="container hero-grid">
+    <section id="top" class="hero">
+      <div class="container hero-inner">
         <div class="hero-copy">
           <div class="identity">
             <strong>Mariam Tarhini</strong>
@@ -52,25 +67,28 @@
 
           <h1>Neuro-Industrial Leadership</h1>
 
-          <p class="hero-scene">A technician hesitates before reporting a deviation.</p>
-          <p class="hero-scene">A supervisor decides in seconds whether to stop the line.</p>
-          <p class="hero-scene">A manager tries to lead someone who used to be a friend.</p>
+          <div class="hero-text">
+            <p class="hero-scene">A technician hesitates before reporting a deviation.</p>
+            <p class="hero-scene">A supervisor decides in seconds whether to stop the line.</p>
+            <p class="hero-scene">A manager tries to lead someone who used to be a friend.</p>
 
-          <p class="hero-body">These moments are rarely just about skills. They are shaped by what happens in the brain, in behavior and in the work environment, especially when pressure, uncertainty and competing demands are present.</p>
+            <p class="hero-body">These moments are rarely just about skills. They are shaped by what happens in the brain, in behavior and in the work environment, especially when pressure, uncertainty and competing demands are present.</p>
 
-          <p class="hero-statement">Neuro-Industrial Leadership brings behavioral neuroscience, human factors and leadership into industrial and operational workplaces, where human performance can affect quality, safety, risk and results.</p>
+            <p class="hero-statement">Neuro-Industrial Leadership brings behavioral neuroscience, human factors and leadership into industrial and operational workplaces, where human performance can affect quality, safety, risk and results.</p>
 
-          <a class="button" href="#approach">Explore the Approach <span aria-hidden="true">→</span></a>
+            <a class="button" href="#approach">Explore the Approach <span aria-hidden="true">→</span></a>
+          </div>
         </div>
+      </div>
 
-        <div class="hero-portrait">
-          <img src="Untitled-2.jpg" alt="Portrait of Mariam Tarhini" width="1920" height="1080" fetchpriority="high">
-        </div>
+      <!-- One image, two crops: desktop and mobile object-position are set in styles.css -->
+      <div class="hero-portrait">
+        <img src="assets/mariam-hero.jpg" alt="Portrait of Mariam Tarhini" width="1600" height="883" fetchpriority="high" decoding="async">
       </div>
     </section>
 
     <!-- ============ SECTION 02: THE REALITY AT WORK ============ -->
-    <section id="reality" class="section surface">
+    <section id="reality" class="section">
       <div class="container narrow">
         <h2>The Reality at Work</h2>
         <p class="lead">In real workplaces, performance is rarely as simple as knowing what to do.</p>
@@ -90,7 +108,7 @@
     </section>
 
     <!-- ============ SECTION 03: WHAT IS NIL? ============ -->
-    <section id="what-is-nil" class="section">
+    <section id="what-is-nil" class="section surface">
       <div class="container narrow">
         <h2>What Is Neuro-Industrial Leadership?</h2>
         <p>Neuro-Industrial Leadership looks at a simple but often overlooked question:</p>
@@ -103,46 +121,47 @@
     </section>
 
     <!-- ============ SECTION 04: WHERE NIL FOCUSES ============ -->
-    <section id="focus" class="section surface">
+    <section id="focus" class="section">
       <div class="container narrow">
         <h2>Where Neuro-Industrial Leadership Focuses</h2>
         <p class="lead">Neuro-Industrial Leadership focuses on the moments where human performance can have a real impact on the work.</p>
 
-        <div class="focus-list">
-          <div class="focus-item">
+        <!-- Number on the LEFT of its heading, on every screen size -->
+        <div class="num-list">
+          <div class="num-item">
+            <span class="num" aria-hidden="true">01</span>
             <div>
               <h3>Attention &amp; Focus</h3>
               <p>What happens when interruptions, competing priorities and constant switching make it harder to stay focused on what matters.</p>
             </div>
-            <span class="focus-number" aria-hidden="true">01</span>
           </div>
-          <div class="focus-item">
+          <div class="num-item">
+            <span class="num" aria-hidden="true">02</span>
             <div>
               <h3>Decision-Making</h3>
               <p>How people make decisions when time is limited, information is incomplete or the stakes are high, and what can shape those decisions in the moment.</p>
             </div>
-            <span class="focus-number" aria-hidden="true">02</span>
           </div>
-          <div class="focus-item">
+          <div class="num-item">
+            <span class="num" aria-hidden="true">03</span>
             <div>
               <h3>Human Factors &amp; Error</h3>
               <p>Looking beyond “who made the mistake?” to understand the conditions that may have contributed to it.</p>
             </div>
-            <span class="focus-number" aria-hidden="true">03</span>
           </div>
-          <div class="focus-item">
+          <div class="num-item">
+            <span class="num" aria-hidden="true">04</span>
             <div>
               <h3>Leadership &amp; Relationships</h3>
               <p>How authority, trust and prior relationships shape whether people speak up, stay silent or hesitate, especially when someone steps into a leadership role among people who once knew them as a peer.</p>
             </div>
-            <span class="focus-number" aria-hidden="true">04</span>
           </div>
-          <div class="focus-item">
+          <div class="num-item">
+            <span class="num" aria-hidden="true">05</span>
             <div>
               <h3>Performance Under Pressure</h3>
               <p>Understanding how pressure can change attention, behavior and decision-making, even in experienced people.</p>
             </div>
-            <span class="focus-number" aria-hidden="true">05</span>
           </div>
         </div>
 
@@ -151,48 +170,68 @@
     </section>
 
     <!-- ============ SECTION 05: THE APPROACH ============ -->
-    <section id="approach" class="section">
+    <section id="approach" class="section surface">
       <div class="container narrow">
         <h2>The Approach</h2>
         <p>When something goes wrong at work, the first question is often:</p>
         <p class="question-small">Who made the mistake?</p>
         <p>Neuro-Industrial Leadership starts one step earlier:</p>
-        <p class="question taupe">What was happening around, and within, the person when the decision or behavior occurred?</p>
+        <p class="question taupe main-question">What was happening around, and within, the person when the decision or behavior occurred?</p>
         <p>The approach looks at performance through four connected layers:</p>
 
-        <div class="layers">
-          <article class="layer">
-            <h3>Brain</h3>
-            <p class="layer-question">What was the person trying to process at that moment?</p>
-            <p>Attention, cognitive load, interruptions, uncertainty and pressure can all influence how information is noticed, processed and acted on.</p>
-            <p>Cognitive load simply refers to how much mental demand a person is managing at one time. When too much competes for limited attention, even familiar work can become harder to manage well.</p>
+        <div class="num-list layers">
+          <article class="num-item">
+            <span class="num" aria-hidden="true">01</span>
+            <div>
+              <h3>Brain</h3>
+              <p class="layer-question">What was the person trying to process at that moment?</p>
+              <p>Attention, cognitive load, interruptions, uncertainty and pressure can all influence how information is noticed, processed and acted on.</p>
+              <p>Cognitive load simply refers to how much mental demand a person is managing at one time. When too much competes for limited attention, even familiar work can become harder to manage well.</p>
+            </div>
           </article>
-          <article class="layer">
-            <h3>Behavior</h3>
-            <p class="layer-question">What did the person actually do: hesitate, rush, stay silent, switch priorities, miss a step or fall back on a familiar response?</p>
-            <p>The same hesitation can mean something different depending on whether it happens under time pressure, after a previous difficult experience, or in front of a supervisor.</p>
+          <article class="num-item">
+            <span class="num" aria-hidden="true">02</span>
+            <div>
+              <h3>Behavior</h3>
+              <p class="layer-question">What did the person actually do: hesitate, rush, stay silent, switch priorities, miss a step or fall back on a familiar response?</p>
+              <p>The same hesitation can mean something different depending on whether it happens under time pressure, after a previous difficult experience, or in front of a supervisor.</p>
+            </div>
           </article>
-          <article class="layer">
-            <h3>Decision</h3>
-            <p class="layer-question">What choice had to be made, with what information, under what constraints?</p>
-            <p>A decision can look very different when viewed alongside the time available, uncertainty, competing priorities and consequences involved.</p>
+          <article class="num-item">
+            <span class="num" aria-hidden="true">03</span>
+            <div>
+              <h3>Decision</h3>
+              <p class="layer-question">What choice had to be made, with what information, under what constraints?</p>
+              <p>A decision can look very different when viewed alongside the time available, uncertainty, competing priorities and consequences involved.</p>
+            </div>
           </article>
-          <article class="layer">
-            <h3>Work System</h3>
-            <p class="layer-question">What in the surrounding work may have shaped that performance?</p>
-            <p>Procedures, workload, interruptions, communication, leadership, role clarity and the design of the work itself can all influence what happens.</p>
+          <article class="num-item">
+            <span class="num" aria-hidden="true">04</span>
+            <div>
+              <h3>Work System</h3>
+              <p class="layer-question">What in the surrounding work may have shaped that performance?</p>
+              <p>Procedures, workload, interruptions, communication, leadership, role clarity and the design of the work itself can all influence what happens.</p>
+            </div>
           </article>
         </div>
 
-        <p class="signature-bar">Brain <span aria-hidden="true">→</span> Behavior <span aria-hidden="true">→</span> Decision <span aria-hidden="true">→</span> Work System</p>
+        <!-- Signature bar -->
+        <p class="signature-bar">
+          <span class="sig-step">Brain</span>
+          <span class="sig-step"><span class="sig-arrow" aria-hidden="true">→</span>Behavior</span>
+          <span class="sig-step"><span class="sig-arrow" aria-hidden="true">→</span>Decision</span>
+          <span class="sig-step"><span class="sig-arrow" aria-hidden="true">→</span>Work System</span>
+        </p>
 
-        <p>The purpose is not to explain every workplace problem through neuroscience, or to remove individual responsibility.</p>
-        <p class="closing">It is to build a fuller picture of performance, so the response goes beyond “be more careful next time.”</p>
+        <div class="approach-close">
+          <p>The purpose is not to explain every workplace problem through neuroscience, or to remove individual responsibility.</p>
+          <p class="closing">It is to build a fuller picture of performance, so the response goes beyond “be more careful next time.”</p>
+        </div>
       </div>
     </section>
 
     <!-- ============ SECTION 06: WORKSHOPS & TRAINING ============ -->
-    <section id="workshops" class="section section-joined">
+    <section id="workshops" class="section">
       <div class="container narrow">
         <h2>Workshops &amp; Training for Organizations</h2>
         <p class="lead">Training should do more than introduce a concept. It should help people recognize what is happening in their own work, and know what to do differently when it matters.</p>
@@ -213,7 +252,8 @@
 
         <p>Additional workshops and training programs can be developed around the specific performance, leadership and human-factor challenges an organization is facing.</p>
 
-        <a class="button" href="#contact">Discuss a Workshop <span aria-hidden="true">→</span></a>
+        <!-- Opens the Organizational Discovery Call (Calendly) once its URL is set in script.js -->
+        <a class="button" href="#contact" data-calendly="org">Discuss a Workshop <span aria-hidden="true">→</span></a>
       </div>
     </section>
 
@@ -225,9 +265,9 @@
         <p>A team dealing with repeated interruptions may need a different approach from supervisors making decisions under time pressure, or managers navigating changing leadership relationships.</p>
         <p>That is why a program begins with the situation your organization is actually facing, considering the people involved, the demands of the work, the leadership context and the conditions shaping performance.</p>
         <p>Training is then developed around the areas that matter most, using relevant workplace scenarios, focused discussions and practical tools that participants can apply to their own work.</p>
-        <p class="question-small taupe">Built around your work. Not a generic training package.</p>
+        <p class="question-small standalone">Built around your work. Not a generic training package.</p>
 
-        <a class="button" href="#contact">Discuss Your Organization’s Needs <span aria-hidden="true">→</span></a>
+        <a class="button" href="#contact" data-calendly="org">Discuss Your Organization’s Needs <span aria-hidden="true">→</span></a>
       </div>
     </section>
 
@@ -244,7 +284,8 @@
           <p>The coaching draws on practical tools from my training and certification in NLP and mBIT, used according to the needs of each situation.</p>
         </div>
 
-        <a class="button" href="#contact-professionals">Explore 1:1 Coaching <span aria-hidden="true">→</span></a>
+        <!-- Opens the 1:1 Coaching Conversation (Calendly) once its URL is set in script.js -->
+        <a class="button" href="#contact-professionals" data-calendly="coaching">Book a 1:1 Conversation <span aria-hidden="true">→</span></a>
       </div>
     </section>
 
@@ -255,7 +296,7 @@
         <p class="lead">My professional path started with science.</p>
         <p>With a background in Biochemistry, I spent 14 years in laboratory and industrial environments: 12 years in ISO 17025-accredited water and environmental testing labs and two years in a metal-forming factory, where procedures, quality and decisions have real consequences.</p>
         <p>Over time, one question became central to my work:</p>
-        <p class="question taupe">Why do capable people sometimes perform differently from what they know?</p>
+        <p class="question taupe main-question">Why do capable people sometimes perform differently from what they know?</p>
         <p>That question led me beyond technical performance to explore human behavior, leadership and the conditions that shape how people think and respond at work.</p>
         <p>Today, I bring together my scientific background, workplace experience and MBA in Management through Neuro-Industrial Leadership, combining neuroscience-informed approaches, human factors and leadership.</p>
         <p>My purpose is not to bring more theory into the workplace.</p>
@@ -263,19 +304,19 @@
 
         <div class="certifications">
           <h3>Professional Training &amp; Certifications</h3>
-          <ul class="cert-grid">
+          <ul class="cert-list">
             <li class="cert-item">
-              <!-- PENDING ASSET: authorized INLPTA logo (SVG preferred). When supplied, add:
-                   <img class="cert-logo" src="assets/inlpta-logo.svg" alt="INLPTA: International NLP Trainers Association"> -->
+              <!-- Optional, only with permission: small INLPTA logo, secondary to the text.
+                   <img class="cert-logo" src="assets/inlpta-logo.svg" alt="INLPTA: International NLP Trainers Association" loading="lazy"> -->
               <p><strong>INLPTA</strong>: Certified Trainer; Master Practitioner in the Art and Science of Neuro-Linguistic Programming.</p>
             </li>
             <li class="cert-item">
-              <!-- PENDING ASSET: authorized mBIT logo (SVG preferred). When supplied, add:
-                   <img class="cert-logo" src="assets/mbit-logo.svg" alt="mBIT International"> -->
+              <!-- Optional, only with permission: small mBIT logo, secondary to the text.
+                   <img class="cert-logo" src="assets/mbit-logo.svg" alt="mBIT International" loading="lazy"> -->
               <p><strong>mBIT International</strong>: Certified mBIT Coach. Completed the mBIT Coach Certification Training program, an ICF-accredited Continuing Coach Education (CCE) course.</p>
             </li>
             <li class="cert-item">
-              <!-- Text only by design: no John Maxwell, GATC or ICF logos. -->
+              <!-- Text only by design: no John Maxwell or ICF logos. -->
               <p><strong>John Maxwell Team</strong>: Successfully completed “Becoming a Person of Influence” (25-hour course).</p>
             </li>
           </ul>
@@ -284,7 +325,7 @@
     </section>
 
     <!-- ============ SECTION 10: LET'S TALK ============ -->
-    <section id="contact" class="section surface contact">
+    <section id="contact" class="section contact">
       <div class="container">
         <h2>Let’s Talk</h2>
         <p class="lead">Every workplace challenge starts with a conversation. Let’s explore what matters in your situation.</p>
@@ -293,15 +334,15 @@
           <article class="contact-card">
             <h3>For Organizations</h3>
             <p>Let’s discuss your team’s challenges and how a workshop or customized program could support your organization.</p>
-            <a class="button" href="mailto:Mariam.tarhinie@gmail.com?subject=Organizational%20Training%20Inquiry">Discuss Your Needs <span aria-hidden="true">→</span></a>
+            <!-- Organizational Discovery Call, 30 min. Falls back to email until the Calendly URL is set. -->
+            <a class="button" href="mailto:Mariam.tarhinie@gmail.com?subject=Organizational%20Training%20Inquiry" data-calendly="org">Discuss Your Needs <span aria-hidden="true">→</span></a>
           </article>
 
           <article class="contact-card" id="contact-professionals">
             <h3>For Professionals &amp; Managers</h3>
             <p>Let’s explore your workplace challenge through focused 1:1 coaching.</p>
-            <!-- PENDING_BOOKING_URL: set BOOKING_URL at the top of script.js once the real
-                 scheduling link is supplied. Until then this button stays disabled (no fake URL). -->
-            <a class="button button-outline booking-pending" id="booking-link" role="link" aria-disabled="true" title="Booking link pending">Book a Conversation <span aria-hidden="true">→</span></a>
+            <!-- 1:1 Coaching Conversation, 20 min. Stays disabled until the Calendly URL is set (no fake link). -->
+            <a class="button button-outline is-pending" role="link" aria-disabled="true" title="Booking link pending" data-calendly="coaching">Book a Conversation <span aria-hidden="true">→</span></a>
           </article>
         </div>
       </div>
@@ -320,6 +361,7 @@
       <nav class="footer-links" aria-label="Footer navigation">
         <a href="#approach">The Approach</a>
         <a href="#workshops">Workshops</a>
+        <a href="#coaching">1:1 Coaching</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
